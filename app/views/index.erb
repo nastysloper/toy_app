@@ -1,0 +1,12 @@
+<h2>Pick a deck:</h2>
+
+<div id="deck">
+  <ol>
+    <% @deck.each do |deck| %>
+      <li> 
+        <a href="/deck/<%= deck.id %>"><%= deck.name %></a>
+      </li>
+    <% end %>
+  </ol>
+</div>
+
